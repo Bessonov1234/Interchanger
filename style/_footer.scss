@@ -1,0 +1,152 @@
+// @use "../Basic.scss";
+// @use "../header";
+// ?
+
+@mixin _1050 {
+  @media (max-width: 1050px) {
+    @content;
+  }
+}
+@mixin _1000 {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+@mixin _900 {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+@mixin _850 {
+  @media (max-width: 850px) {
+    @content;
+  }
+}
+@mixin _800 {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+@mixin _700 {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+@mixin _650 {
+  @media (max-width: 650px) {
+    @content;
+  }
+}
+
+// ? MIXIN
+
+// ? Footer
+
+.footer {
+  max-width: 100%;
+  background: #383838;
+  &__conteiner {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 50px ;
+    @include _900() {
+      padding: 50px 5%;
+    }
+  }
+  &__blok {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+    @include _900() {
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 1fr;
+    }
+    @include _800() {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-auto-rows: 1fr;
+    }
+    &__icon {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      @include _800() {
+        align-items: center;
+      }
+      &__wrraper {
+        max-width: 150px;
+        max-height: 70px;
+        &__img {
+        }
+      }
+      &__text {
+        @include _800() {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &__about {
+          font-family: "Montserrat Alternates", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #fffefe;
+          @include _800() {
+            text-align: center;
+          }
+        }
+      }
+    }
+    &__add {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      @include _900 {
+        align-items: flex-end;
+      }
+      &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &__about {
+          font-family: "Montserrat Alternates", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 17px;
+          color: #fffefe;
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &__social {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      &__text {
+        font-family: "Montserrat Alternates", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #fffefe;
+      }
+    }
+  }
+}
+
+.fa-brands {
+  font-size: 38px;
+  color: #595959;
+  @include _800() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.fa-telegram {
+}

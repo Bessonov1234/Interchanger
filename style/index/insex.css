@@ -1,0 +1,941 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Montserrat:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  max-width: 100%;
+  background: #383838;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.conteiner {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.blok {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 40px 10px;
+}
+@media (max-width: 700px) {
+  .blok {
+    padding: 25px 20px 10px;
+  }
+}
+.blok__register {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 5px;
+  padding-left: 25px;
+}
+@media (max-width: 700px) {
+  .blok__register {
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.blok__register__language {
+  height: 30px;
+  width: 65px;
+  border-radius: 8px;
+  background: #6d6d6d;
+  padding: 0 10px;
+  font: 13px/30px "Montserrat Alternates", sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.blok__register__language__text {
+  position: relative;
+}
+.blok__register__language__text::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 28px;
+  width: 2.4px;
+  height: 6px;
+  background-color: #000;
+  transform: rotate(133deg);
+}
+.blok__register__language__text::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 31px;
+  width: 2.4px;
+  height: 6px;
+  background-color: #000;
+  transform: rotate(-133deg);
+}
+.blok__register__log {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+}
+.blok__register__email {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+}
+.blok__register__email__text {
+  text-decoration: none;
+  color: #d6d6d6;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+}
+.blok__register__email__text:hover {
+  text-decoration: underline;
+}
+.blok__register__link {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 19px;
+  background-color: #555454;
+  transition: 0.1s ease;
+}
+.blok__register__link:hover {
+  background-color: #494848;
+}
+.blok__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blok__navigation__ul {
+  display: flex;
+  gap: 15px;
+  transition: 2s ease;
+}
+.blok__navigation__link {
+  transition: 0.4s ease;
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 17px;
+  color: #fff;
+  transition: 0.1s ease;
+  border-bottom: 2px solid transparent;
+  padding: 5px 0;
+}
+.blok__navigation__link--active {
+  padding: 5px 0;
+  transition: 0.4s ease;
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 17px;
+  color: #fff;
+  transition: 0.1s ease;
+  border-bottom: 2px solid rgb(226, 208, 208);
+}
+@media (max-width: 800px) {
+  .blok__navigation__link {
+    margin: 10px 0;
+  }
+}
+.blok__navigation__link:hover {
+  border-bottom: 2px solid rgb(226, 208, 208);
+}
+.blok__navigation__wrraper__icon {
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 700px) {
+  .blok__navigation__wrraper__icon {
+    width: 10vw;
+    min-width: 200px;
+    gap: 15px;
+  }
+}
+.blok__navigation__wrraper__icon__operator {
+  border-radius: 5px;
+  background: #474747 url(images/online_arr.png) no-repeat 10px center;
+  cursor: pointer;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 36px;
+  width: 200px;
+}
+@media (max-width: 700px) {
+  .blok__navigation__wrraper__icon__operator {
+    width: 10vw;
+  }
+}
+.blok__navigation__wrraper__icon__operator__iconop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5px;
+  height: 3px;
+  border-radius: 25px;
+  border: 2px solid rgb(6, 214, 6);
+  padding: 8px;
+}
+.blok__navigation__wrraper__icon__operator__iconop__in {
+  width: 7px;
+  height: 6px;
+  border: 2px solid rgb(6, 214, 6);
+  border-radius: 50%;
+}
+.blok__navigation__wrraper__icon__operator__iconop__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 17px;
+  color: #fff;
+  transition: 0.1;
+}
+@media (max-width: 700px) {
+  .blok__navigation__wrraper__icon__operator__iconop__text {
+    display: none;
+  }
+}
+
+.fa-envelope {
+  color: #d6d6d6;
+  text-decoration: none;
+}
+
+#burger,
+[for=burger] {
+  display: none;
+}
+
+.fa-solid {
+  display: none;
+}
+
+.fa-bars {
+  display: none;
+}
+
+@media (max-width: 1010px) {
+  .blok__navigation__ul {
+    display: none;
+    transition: 2s ease;
+  }
+  [for=burger] {
+    transition: 2s ease;
+    display: block;
+  }
+  #burger:checked + label + .blok__navigation__ul {
+    transition: 2s ease;
+    transform: scale(1);
+    display: block;
+    background-color: #494848;
+    position: absolute;
+    top: 199px;
+    left: 0;
+    z-index: 22;
+    text-align: center;
+    min-width: 100vw;
+    min-height: 295vh;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  #burger:checked + label + .transactions {
+    display: none;
+  }
+  .fa-bars:active {
+    transition: 0.1s ease;
+    transform: rotate(360deg);
+  }
+  #burger:checked + .fa-bars {
+    transition: 0.4s ease;
+    transform: rotate(45deg);
+  }
+  .fa-solid {
+    font-size: 22px;
+    color: #fff;
+  }
+  .fa-bars {
+    display: block;
+  }
+}
+.footer {
+  max-width: 100%;
+  background: #383838;
+}
+.footer__conteiner {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 50px;
+}
+@media (max-width: 900px) {
+  .footer__conteiner {
+    padding: 50px 5%;
+  }
+}
+.footer__blok {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10%;
+}
+@media (max-width: 900px) {
+  .footer__blok {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .footer__blok {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-auto-rows: 1fr;
+  }
+}
+.footer__blok__icon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 800px) {
+  .footer__blok__icon {
+    align-items: center;
+  }
+}
+.footer__blok__icon__wrraper {
+  max-width: 150px;
+  max-height: 70px;
+}
+@media (max-width: 800px) {
+  .footer__blok__icon__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer__blok__icon__text__about {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fffefe;
+}
+@media (max-width: 800px) {
+  .footer__blok__icon__text__about {
+    text-align: center;
+  }
+}
+.footer__blok__add {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 900px) {
+  .footer__blok__add {
+    align-items: flex-end;
+  }
+}
+.footer__blok__add__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__blok__add__text__about {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #fffefe;
+}
+.footer__blok__add__text__about:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footer__blok__social {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer__blok__social__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fffefe;
+}
+
+.fa-brands {
+  font-size: 38px;
+  color: #595959;
+}
+@media (max-width: 800px) {
+  .fa-brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.transactions {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-bottom: 100px;
+}
+.transactions__conteiner {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 6%;
+  overflow-x: hidden;
+}
+.transactions__blok {
+  display: grid;
+  grid-template-columns: 35% 2fr;
+  gap: 5%;
+}
+@media (max-width: 800px) {
+  .transactions__blok {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.transactions__blok__give {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1fr);
+}
+.transactions__blok__give__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #595959;
+  padding: 0 0 10px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 17px;
+  margin-bottom: 25px;
+}
+.transactions__blok__give__cripto {
+  border: 1px solid #e1d5cc;
+  border-radius: 24px;
+  box-shadow: 0 0 10px #ebebec;
+  min-width: 48%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.transactions__blok__give__cripto__text__listing {
+  border-bottom: 1px solid #e1d5cc;
+}
+.transactions__blok__give__cripto__text__listing__text {
+  display: block;
+  font-family: "Montserrat Alternates", sans-serif;
+  padding: 0px 0 0px 20px;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  min-width: 100%;
+  color: #000;
+}
+.transactions__blok__give__cripto__listing {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+  align-items: center;
+  border-bottom: 1px solid #e1d5cc;
+  padding: 8px 0 8px 5%;
+  transition: 0.1s ease;
+}
+@media (max-width: 650px) {
+  .transactions__blok__give__cripto__listing {
+    flex-direction: column;
+  }
+}
+.transactions__blok__give__cripto__listing:hover {
+  background-color: #d3bfaf;
+}
+.transactions__blok__give__cripto__listing--active {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+  align-items: center;
+  border-bottom: 1px solid #e1d5cc;
+  padding: 8px 0 8px 5%;
+  transition: 0.1s ease;
+  background-color: #d3bfaf;
+}
+@media (max-width: 650px) {
+  .transactions__blok__give__cripto__listing--active {
+    flex-direction: column;
+  }
+}
+.transactions__blok__give__cripto__listing__end {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+  align-items: center;
+  padding: 8px 0 8px 5%;
+  transition: 0.1s ease;
+}
+.transactions__blok__give__cripto__listing__end:hover {
+  background-color: #d3bfaf;
+}
+.transactions__blok__give__cripto__listing__wrraper {
+  width: 30px;
+  height: 30px;
+}
+.transactions__blok__give__cripto__listing__text__about {
+  font-family: "Montserrat Alternates", sans-serif;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #000;
+}
+@media (max-width: 700px) {
+  .transactions__blok__give__cripto__listing__text__about {
+    text-align: center;
+  }
+}
+
+.transactions__blok__getting {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+.transactions__blok__getting__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #595959;
+  padding: 0 0 10px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 17px;
+}
+.transactions__blok__getting__cripto {
+  display: grid;
+  border: 1px solid #e1d5cc;
+  border-radius: 24px;
+  box-shadow: 0 0 10px #ebebec;
+  min-width: 48%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.transactions__blok__getting__cripto__text__listing {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e1d5cc;
+  position: relative;
+}
+.transactions__blok__getting__cripto__text__listing__your {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  padding: 0 0 10px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  padding-left: 30px;
+}
+.transactions__blok__getting__cripto__text__listing__curs {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  padding: 0 0 10px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  position: absolute;
+  left: 50%;
+}
+@media (max-width: 900px) {
+  .transactions__blok__getting__cripto__text__listing__curs {
+    display: none;
+  }
+}
+.transactions__blok__getting__cripto__text__listing__reserv {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  padding: 0 0 10px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  position: absolute;
+  left: 80%;
+}
+@media (max-width: 800px) {
+  .transactions__blok__getting__cripto__text__listing__reserv {
+    display: none;
+  }
+}
+.transactions__blok__getting__cripto__listing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e1d5cc;
+  position: relative;
+}
+.transactions__blok__getting__cripto__listing:hover {
+  background-color: #d3bfaf;
+}
+@media (max-width: 650px) {
+  .transactions__blok__getting__cripto__listing {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.transactions__blok__getting__cripto__listing__w {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  .transactions__blok__getting__cripto__listing__w {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.transactions__blok__getting__cripto__listing__wrraper {
+  width: 30px;
+  margin-left: 1.4rem;
+  margin-right: 1rem;
+}
+.transactions__blok__getting__cripto__listing__wrraper__img__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+}
+@media (max-width: 650px) {
+  .transactions__blok__getting__cripto__listing__wrraper__img__text {
+    text-align: center;
+  }
+}
+.transactions__blok__getting__cripto__text__listing__curs__blok {
+  display: flex;
+  position: absolute;
+  left: 49%;
+}
+.transactions__blok__getting__cripto__text__listing__curs__text {
+  display: block;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+}
+@media (max-width: 900px) {
+  .transactions__blok__getting__cripto__text__listing__curs__text {
+    display: none;
+  }
+}
+.transactions__blok__getting__cripto__text__listing__curs__text__1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+}
+@media (max-width: 900px) {
+  .transactions__blok__getting__cripto__text__listing__curs__text__1 {
+    display: none;
+  }
+}
+.transactions__blok__getting__cripto__text__listing__curs__text__2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+}
+@media (max-width: 900px) {
+  .transactions__blok__getting__cripto__text__listing__curs__text__2 {
+    display: none;
+  }
+}
+.transactions__blok__getting__cripto__text__listing__curs__text__3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+}
+@media (max-width: 900px) {
+  .transactions__blok__getting__cripto__text__listing__curs__text__3 {
+    display: none;
+  }
+}
+.transactions__blok__getting__cripto__text__listing__curs__text__4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+}
+@media (max-width: 900px) {
+  .transactions__blok__getting__cripto__text__listing__curs__text__4 {
+    display: none;
+  }
+}
+.transactions__blok__getting__cripto__text__listing__curs__text__5 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+}
+@media (max-width: 900px) {
+  .transactions__blok__getting__cripto__text__listing__curs__text__5 {
+    display: none;
+  }
+}
+.transactions__blok__getting__cripto__text__listing__curs__text__6 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+}
+@media (max-width: 900px) {
+  .transactions__blok__getting__cripto__text__listing__curs__text__6 {
+    display: none;
+  }
+}
+.transactions__blok__getting__cripto__text__listing__curs__text__7 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+}
+@media (max-width: 900px) {
+  .transactions__blok__getting__cripto__text__listing__curs__text__7 {
+    display: none;
+  }
+}
+.transactions__blok__getting__cripto__text__listing__curs__text__8 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+}
+@media (max-width: 900px) {
+  .transactions__blok__getting__cripto__text__listing__curs__text__8 {
+    display: none;
+  }
+}
+.transactions__blok__getting__cripto__text__listing__reserv__blok {
+  display: flex;
+}
+.transactions__blok__getting__cripto__text__listing__reserv__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  padding-right: 30px;
+}
+@media (max-width: 900px) {
+  .transactions__blok__getting__cripto__text__listing__reserv__text {
+    padding-right: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .transactions__blok__getting__cripto__text__listing__reserv__text {
+    display: none;
+  }
+}
+.transactions__blok__getting__cripto__text__listing__reserv__text__wrraper {
+  margin-right: 2rem;
+  width: 18px;
+}
+@media (max-width: 800px) {
+  .transactions__blok__getting__cripto__text__listing__reserv__text__wrraper {
+    display: none;
+  }
+}
+.traksa {
+  max-width: 100%;
+}
+.traksa__conteiner {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 6%;
+}
+.traksa__conteiner__title {
+  margin-bottom: 30px;
+}
+.traksa__conteiner__title__text {
+  color: #595959;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 17px;
+}
+.traksa__blok {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+@media (max-width: 800px) {
+  .traksa__blok {
+    grid-template-columns: 1fr;
+  }
+}
+.traksa__blok__crypto {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  gap: 20px;
+  background: #fff;
+  border: 1px solid #e1d5cc;
+  box-shadow: 0 0 10px #ebebec;
+  padding: 20px 20px 20px 20px;
+}
+@media (max-width: 800px) {
+  .traksa__blok__crypto {
+    padding: 5px 20px 20px 20px;
+  }
+}
+.traksa__blok__crypto__1 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  gap: 20px;
+  background: #fff;
+  border: 1px solid #e1d5cc;
+  box-shadow: 0 0 10px #ebebec;
+  padding: 20px 20px 20px 20px;
+}
+@media (max-width: 1000px) {
+  .traksa__blok__crypto__1 {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .traksa__blok__crypto__1 {
+    display: flex;
+    padding: 5px 20px 20px 20px;
+  }
+}
+.traksa__blok__crypto__2 {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  gap: 20px;
+  background: #fff;
+  border: 1px solid #e1d5cc;
+  box-shadow: 0 0 10px #ebebec;
+  padding: 20px 20px 20px 20px;
+}
+@media (max-width: 800px) {
+  .traksa__blok__crypto__2 {
+    display: flex;
+    padding: 5px 20px 20px 20px;
+  }
+}
+.traksa__blok__crypto__data {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.traksa__blok__crypto__data__text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: #b1a6a1;
+  text-align: right;
+}
+.traksa__blok__crypto__move {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .traksa__blok__crypto__move {
+    justify-content: space-evenly;
+  }
+}
+.traksa__blok__crypto__move__wrraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.traksa__blok__crypto__move__img {
+  width: 40px;
+}
+.traksa__blok__crypto__move__wrraper__text__about {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-align: right;
+}
+.traksa__blok__crypto__move__dart {
+  width: 25px;
+}
+.background {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.traksa__conteiner__sub__background {
+  margin-top: 20px;
+  width: 80px;
+  height: 70px;
+}/*# sourceMappingURL=insex.css.map */

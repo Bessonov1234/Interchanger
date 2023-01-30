@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../icon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../icon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Ask.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <title>BISSION</title>
+  </head>
+  <body>
+    <!-- ! Header -->
+    <header class="header">
+      <div class="conteiner">
+        <div class="blok">
+          <div class="blok__register">
+            <div class="blok__register__log">
+              <a href="" class="blok__register__link">Войти</a>
+              <a href="" class="blok__register__link">Регистрация</a>
+            </div>
+            <div class="blok__register__email">
+              <i class="fa-regular fa-envelope"></i>
+              <a
+                href="mailto:bisson_help@pm.me"
+                class="blok__register__email__text"
+                >bisson_help@pm.me</a
+              >
+              <div class="blok__register__language">
+                <span class="blok__register__language__text">RU</span>
+              </div>
+            </div>
+          </div>
+
+          <nav class="blok__navigation">
+            <div class="blok__navigation__wrraper__icon">
+              <a href="../index.html">
+                <img
+                  src="../image/logo.svg"
+                  alt="logo"
+                  class="blok__navigation__wrraper__icon__img"
+                />
+              </a>
+              <div class="blok__navigation__wrraper__icon__operator">
+                <div class="blok__navigation__wrraper__icon__operator__iconop">
+                  <div
+                    class="blok__navigation__wrraper__icon__operator__iconop__in"
+                  ></div>
+                </div>
+                <span
+                  class="blok__navigation__wrraper__icon__operator__iconop__text"
+                  >operator online</span
+                >
+              </div>
+            </div>
+            <input type="checkbox" id="burger" />
+            <label for="burger">
+              <i class="fa-sharp fa-solid fa-bars"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <ul class="blok__navigation__ul">
+              <li>
+                <a href="../index.html" class="blok__navigation__link--active"
+                  >Главная</a
+                >
+              </li>
+              <li><a href="" class="blok__navigation__link">Тарифы</a></li>
+              <li><a href="" class="blok__navigation__link">Контакты</a></li>
+              <li>
+                <a href="./html(ask)/ask.html" class="blok__navigation__link"
+                  >Вопросы и ответы</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- ! Accordion -->
+
+    <div class="title">
+      <div class="title__conteiner">
+        <a href="../index.html">
+          <span class="title__conteiner__text">Обмен валют </span>
+        </a>
+        <span class="title__conteiner__text__about">Вопросы и ответы</span>
+      </div>
+    </div>
+    <div class="blok__acordion">
+      <div class="blok__acordion__1">
+        <div class="text">
+          <span class="text__about__1">Вопросы по заявкам</span>
+        </div>
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                С какой скоростью обрабатываются заявки?
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                Заявки обрабатываются оператором в течении 5-7 минут, но
+                некоторые направления работают в автоматическом режиме и
+                обрабатываются в течении 1 минуты.
+              </div>
+            </div>
+          </div>
+          <!-- <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div> -->
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                Замена/изменение реквизитов по заявке
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree"
+            >
+              <div class="accordion-body">
+                При создании заявки обязательно указывайте Ваш действующий адрес
+                электронной почты! Любые изменения данных заявки возможны только
+                через подтверждение с E-mail указанного в заявке.
+                <br />
+                <br />
+                Для замены/изменения реквизитов в заявке, Вам надо отправить на
+                нашу почту bisson_help@pm.me письмо с почты, которая указанная в
+                Вашей заявке. Тема данного письма должна содержать номер Вашей
+                заявки (пример ID: 109485 или 109485). В тексте письма должен
+                быть новый адрес реквизитов куда стоит совершить выплату. После
+                получения такого письма оператор чата в ручном режиме совершит
+                выплату по Вашей заявке
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text" style="margin-top: 40px">
+          <span class="text__about__1">Общие вопросы</span>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Что делать если не приходят письмо для подтверждения email? 
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                С некоторыми почтовыми сервисами бывает такая проблема, если вы
+                с ней столкнулись, то напишите нам в онлайн-чат и оператор
+                подтвердит вас в ручную.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Как пройти верификацию карты?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Первым делом вам необходимо пройти регистрацию на сайте, далее
+                перейди на страницу "Ваши счета"
+                (https://24bitbank.io/userwallets/), вписать реквизиты и нажать
+                верифицировать. На открывшейся странице необходимо прикрепить
+                фотографию вашей карты на фоне открытой страницы нашего сайта,
+                должен быть виден номер карты, другие данные можете закрыть
+                пальцами. Процесс быстрый и делается всего лишь 1 раз. В рабочее
+                время подтверждаем верификацию в течении 5 минут.
+
+                <a href=""> Инструкция с картинками</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Фиксируется ли курс?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Курс не фиксируется и автоматически пересчитывается по факту
+                получения нами денежных средств от клиента.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ! register -->
+
+<article class="register">
+  <div class="register__conteiner">
+<div class="register__blok"></div>
+
+
+  </div>
+</article>
+
+    <!-- ! Footer -->
+
+    <footer class="footer">
+      <div class="footer__conteiner">
+        <div class="footer__blok">
+          <div class="footer__blok__icon">
+            <div class="footer__blok__icon__wrraper">
+              <a href="./index.html">
+                <img
+                  src="../image/logo.svg"
+                  alt="logo"
+                  class="footer__blok__icon__wrraper__img"
+                />
+              </a>
+            </div>
+            <div class="footer__blok__icon__text">
+              <span class="footer__blok__icon__text__about">
+                © 2022 — BISSON EXCHANGE Автоматический обмен криптовалют
+              </span>
+            </div>
+          </div>
+          <div class="footer__blok__add">
+            <div class="footer__blok__add__text">
+              <a href="#"
+                ><span class="footer__blok__add__text__about">Узнать</span></a
+              >
+              <a href="#">
+                <span class="footer__blok__add__text__about">Прочитать</span></a
+              >
+              <a href="#">
+                <span class="footer__blok__add__text__about">О сервисе</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer__blok__social">
+            <i class="fa-brands fa-telegram"></i>
+            <span class="footer__blok__social__text"
+              >ПН-ВС 10:00-22:00 по МСК</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

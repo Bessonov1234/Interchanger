@@ -1,0 +1,199 @@
+@use "../style/footer";
+@use "../style/header";
+@use "../style/Basic";
+
+// ! Tarif
+
+.tarif {
+  max-width: 100%;
+  &__conteiner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  &__blok {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    &__transakt {
+      &__link__about {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 20px 10px;
+        border-radius: 24px;
+        background: #fff;
+        border: 1px solid #e1d5cc;
+        box-shadow: 0 0 10px #ebebec;
+        margin: 0 0 20px;
+        &__obmen {
+          display: flex;
+          font-family: "Montserrat Alternates", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 17px;
+          color: #999;
+          text-align: right;
+          margin-bottom: 13px;
+        }
+      }
+      &__title__about {
+        display: flex;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 17px;
+        color: #595959;
+        text-align: right;
+        margin-bottom: 23px;
+      }
+      &__link__about__title {
+        font-family: "Montserrat Alternates", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 17px;
+        color: #595959;
+        text-align: right;
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      &__link__about__setting {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 2px solid #dcdcdd;
+        grid-auto-rows: 25px;
+        // padding-bottom: 10px;
+        padding-left: 10px;
+        &__text {
+          font-family: "Montserrat Alternates", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 17px;
+          color: #595959;
+          text-align: right;
+          display: flex;
+          margin-bottom: 20px;
+        }
+        &__thatitwas {
+          padding-left: 10px;
+          display: grid;
+          border-bottom: 2px solid #dcdcdd;
+          padding-bottom: 10px;
+          grid-template-columns: 1fr 1fr;
+          // border-bottom: 2px solid #dcdcdd;
+          // grid-auto-rows: 25px;
+          &__cripto {
+            display: flex;
+            align-items: flex-start;
+            gap: 20%;
+            &__valute {
+              display: flex;
+              align-items: center;
+              max-width: 180px;
+              // gap: 5px;
+            }
+            &__wrraper {
+              width: 25px;
+              &__img {
+              }
+            }
+            &__text {
+              padding-top: 10px;
+              &__about {
+                font-family: "Montserrat Alternates", sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 17px;
+                color: #000;
+                // text-align: right;
+                display: flex;
+                justify-content: flex-start;
+                max-width: 130px;
+                // margin-bottom: 20px;
+              }
+            }
+            &__coin {
+              padding-top: 10px;
+
+              &__about {
+                font-family: "Montserrat Alternates", sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 17px;
+                color: #000;
+
+                text-align: right;
+                display: flex;
+                // margin-bottom: 20px;
+              }
+            }
+          }
+          &__our {
+            display: flex;
+            justify-content: space-between;
+            &__gorizon {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+            }
+            &__vertical {
+              display: flex;
+              // gap: 10%;
+
+              align-items: center;
+            }
+            &__wrraper {
+              width: 25px;
+
+              &__img {
+              }
+            }
+            &__than {
+              font-family: "Montserrat Alternates", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 17px;
+              color: #000;
+              // text-align: right;
+              display: block;
+              margin-left: 1%;
+            }
+            &__valute {
+              margin-left: 10%;
+            }
+            &__than__valute__text {
+              font-family: "Montserrat Alternates", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 17px;
+              color: #000;
+              text-align: right;
+            }
+            &__gorizon__reserv {
+            }
+            &__gorizon__gorizon__reserv__text {
+              font-family: "Montserrat Alternates", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 13px;
+              line-height: 17px;
+              color: #595959;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ? Register
+.register {
+}

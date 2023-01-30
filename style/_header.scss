@@ -1,0 +1,309 @@
+@use "./Basic.scss";
+
+@mixin _900 {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+@mixin _850 {
+  @media (max-width: 850px) {
+    @content;
+  }
+}
+@mixin _800 {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+@mixin _700 {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+// ? MIXIN
+
+.header {
+  max-width: 100%;
+  background: #383838;
+  margin-bottom: 50px;
+  position: relative;
+  // overflow-y: hidden;
+}
+
+.conteiner {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.blok {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 40px 10px;
+  @include _700() {
+    padding: 25px 20px 10px;
+
+  }
+  &__register {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5px;
+    padding-left: 25px;
+    @include _700() {
+      justify-content: space-evenly;
+      flex-direction: column;
+      gap: 16px;
+    }
+    &__language {
+      height: 30px;
+      width: 65px;
+      border-radius: 8px;
+      background: #6d6d6d;
+      padding: 0 10px;
+      font: 13px/30px "Montserrat Alternates", sans-serif;
+      color: #000;
+      text-transform: uppercase;
+      cursor: pointer;
+      &__text {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 6px;
+          left: 28px;
+          width: 2.4px;
+          height: 6px;
+          background-color: #000;
+          transform: rotate(133deg);
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 6px;
+          left: 31px;
+          width: 2.4px;
+
+          height: 6px;
+          background-color: #000;
+          transform: rotate(-133deg);
+        }
+      }
+    }
+    &__log {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      gap: 5%;
+    }
+    &__email {
+      display: flex;
+      gap: 2%;
+      align-items: center;
+
+      &__text {
+        text-decoration: none;
+        color: #d6d6d6;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    &__link {
+      display: block;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #fff;
+      padding: 10px 12px;
+      border-radius: 19px;
+      background-color: #555454;
+      transition: 0.1s ease;
+
+      &:hover {
+        background-color: #494848;
+      }
+    }
+  }
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__ul {
+      display: flex;
+      gap: 15px;
+      transition: 2s ease;
+    }
+    &__link {
+      transition: 0.4s ease;
+
+      display: block;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 17px;
+      color: #fff;
+      transition: 0.1s ease;
+      border-bottom: 2px solid transparent;
+      padding: 5px 0;
+      &--active {
+        padding: 5px 0;
+        transition: 0.4s ease;
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 17px;
+        color: #fff;
+        transition: 0.1s ease;
+        border-bottom: 2px solid rgb(226, 208, 208);
+      }
+      @include _800() {
+        margin: 10px 0;
+      }
+
+      &:hover {
+        border-bottom: 2px solid rgb(226, 208, 208);
+      }
+    }
+    &__wrraper__icon {
+      min-width: 200px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      @include _700() {
+        width: 10vw;
+        min-width: 200px;
+      gap: 15px;
+
+      }
+      &__img {
+      }
+      &__operator {
+        border-radius: 5px;
+        background: #474747 url(images/online_arr.png) no-repeat 10px center;
+        cursor: pointer;
+        display: flex;
+        gap: 5%;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 36px;
+        width: 200px;
+        @include _700() {
+          width: 10vw;
+        }
+        &__iconop {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 5px;
+          height: 3px;
+          // background-color: green;
+          border-radius: 25px;
+          border: 2px solid rgb(6, 214, 6);
+          padding: 8px;
+          &__in {
+            width: 7px;
+            height: 6px;
+            // background-color: green;
+            border: 2px solid rgb(6, 214, 6);
+
+            border-radius: 50%;
+          }
+          &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 17px;
+            color: #fff;
+            transition: 0.1;
+            @include _700() {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.fa-regular {
+}
+.fa-envelope {
+  color: #d6d6d6;
+  text-decoration: none;
+}
+
+#burger,
+[for="burger"] {
+  display: none;
+}
+.fa-sharp {
+}
+.fa-solid {
+  display: none;
+}
+.fa-bars {
+  display: none;
+}
+.fa-xmark {
+}
+@media (max-width: 1010px) {
+  .blok__navigation__ul {
+    display: none;
+    transition: 2s ease;
+  }
+  [for="burger"] {
+    transition: 2s ease;
+
+    display: block;
+  }
+  #burger:checked + label + .blok__navigation__ul {
+    transition: 2s ease;
+    transform: scale(1);
+    display: block;
+    background-color: #494848;
+    position: absolute;
+    top: 199px;
+    left: 0;
+    z-index: 22;
+    text-align: center;
+    min-width: 100vw;
+    min-height: 295vh;
+
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  #burger:checked + label + .transactions {
+    display: none;
+  }
+  .fa-bars:active {
+    transition: 0.1s ease;
+    transform: rotate(360deg);
+  }
+  #burger:checked + .fa-bars {
+    transition: 0.4s ease;
+    transform: rotate(45deg);
+  }
+
+  .fa-solid {
+    // display: block;
+    font-size: 22px;
+    color: #fff;
+  }
+  .fa-xmark {
+    // display: block;
+  }
+  .fa-sharp {
+  }
+  .fa-bars {
+    display: block;
+  }
+}
