@@ -9,10 +9,11 @@
   &__conteiner {
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0 3%;
   }
   &__blok {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
 
     &__transakt {
       &__link__about {
@@ -89,7 +90,7 @@
           &__cripto {
             display: flex;
             align-items: flex-start;
-            gap: 20%;
+            gap: 10%;
             &__valute {
               display: flex;
               align-items: center;
@@ -102,7 +103,9 @@
               }
             }
             &__text {
-              padding-top: 10px;
+              // padding-top: 10px;
+              padding-bottom: 5px;
+    margin-left: 7px;
               &__about {
                 font-family: "Montserrat Alternates", sans-serif;
                 font-style: normal;
@@ -143,10 +146,13 @@
               gap: 20px;
             }
             &__vertical {
-              display: flex;
-              // gap: 10%;
+              // display: flex;
+              // position: relative;
 
-              align-items: center;
+              // align-items: center;
+
+              display: grid;
+              grid-template-columns: 30px 30px 200px 84px;;
             }
             &__wrraper {
               width: 25px;
@@ -166,7 +172,8 @@
               margin-left: 1%;
             }
             &__valute {
-              margin-left: 10%;
+              // position: absolute;
+              // left: 274px;
             }
             &__than__valute__text {
               font-family: "Montserrat Alternates", sans-serif;

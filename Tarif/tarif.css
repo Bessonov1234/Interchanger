@@ -410,10 +410,11 @@ img {
 .tarif__conteiner {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 3%;
 }
 .tarif__blok {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
 }
 .tarif__blok__transakt__link__about {
   display: flex;
@@ -487,7 +488,7 @@ img {
 .tarif__blok__transakt__link__about__setting__thatitwas__cripto {
   display: flex;
   align-items: flex-start;
-  gap: 20%;
+  gap: 10%;
 }
 .tarif__blok__transakt__link__about__setting__thatitwas__cripto__valute {
   display: flex;
@@ -498,7 +499,8 @@ img {
   width: 25px;
 }
 .tarif__blok__transakt__link__about__setting__thatitwas__cripto__text {
-  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-left: 7px;
 }
 .tarif__blok__transakt__link__about__setting__thatitwas__cripto__text__about {
   font-family: "Montserrat Alternates", sans-serif;
@@ -534,8 +536,8 @@ img {
   gap: 20px;
 }
 .tarif__blok__transakt__link__about__setting__thatitwas__our__vertical {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 30px 30px 200px 84px;
 }
 .tarif__blok__transakt__link__about__setting__thatitwas__our__wrraper {
   width: 25px;
@@ -549,9 +551,6 @@ img {
   color: #000;
   display: block;
   margin-left: 1%;
-}
-.tarif__blok__transakt__link__about__setting__thatitwas__our__valute {
-  margin-left: 10%;
 }
 .tarif__blok__transakt__link__about__setting__thatitwas__our__than__valute__text {
   font-family: "Montserrat Alternates", sans-serif;
