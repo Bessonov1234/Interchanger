@@ -238,6 +238,7 @@ img {
   border-radius: 19px;
   background-color: #555454;
   transition: 0.1s ease;
+  text-decoration: none;
 }
 .blok__register__link:hover {
   background-color: #494848;
@@ -254,6 +255,7 @@ img {
 }
 .blok__navigation__link {
   transition: 0.4s ease;
+  text-decoration: none;
   display: block;
   font-style: normal;
   font-weight: 400;
@@ -275,6 +277,7 @@ img {
   color: #fff;
   transition: 0.1s ease;
   border-bottom: 2px solid rgb(226, 208, 208);
+  text-decoration: none;
 }
 @media (max-width: 800px) {
   .blok__navigation__link {
